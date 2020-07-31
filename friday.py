@@ -69,6 +69,14 @@ if __name__ == '__main__':
         elif 'open google' in query:
             speak('okay')
             webbrowser.open('www.google.co.in')
+     
+         elif 'the time' in query:
+            strTime = datetime.datetime.now().strftime("%H:%M:%S")    
+            speak(f"Sir, the time is {strTime}")
+
+        elif 'open code' in query:
+            codePath = "D:\\Users\\Friday Artificial Intelligence\\Friday.py"
+            os.startfile(codePath)   
 
         elif 'open gmail' in query:
             speak('okay')
